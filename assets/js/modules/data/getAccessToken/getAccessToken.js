@@ -1,5 +1,5 @@
-const clientId = "2f562a782625431bba789d6704e59708"; // Replace with your Client ID
-const clientSecret = "MeiRs2QBmCNmnwGjyNt9VE290PsUEaL6"; // Replace with your Client Secret
+const clientId = "2f562a782625431bba789d6704e59708";
+const clientSecret = "EnwfHdQF9S1axUyDN2bTtD5gmtTlHHUz";
 
 // Function to get an access token
 export async function getAccessToken() {
