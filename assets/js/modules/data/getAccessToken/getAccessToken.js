@@ -1,5 +1,4 @@
-const clientId = "2f562a782625431bba789d6704e59708";
-const clientSecret = "EnwfHdQF9S1axUyDN2bTtD5gmtTlHHUz";
+import { clientId, clientSecret } from "../../../apiAuthorization.js";
 
 // Function to get an access token
 export async function getAccessToken() {
