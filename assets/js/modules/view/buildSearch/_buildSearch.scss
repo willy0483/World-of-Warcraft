@@ -1,0 +1,44 @@
+@use "../../../../css/variables" as var;
+
+.item-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .search-container {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: var.$primary-medium;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 34px;
+      height: 34px;
+    }
+
+    input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 10px;
+      font-size: 16px;
+      background-color: transparent;
+      color: var.$text-light;
+    }
+
+    ::placeholder {
+      color: var.$text-muted;
+    }
+  }
+
+  .searchHeaderContainer {
+    text-align: center;
+    color: var.$text-light;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}

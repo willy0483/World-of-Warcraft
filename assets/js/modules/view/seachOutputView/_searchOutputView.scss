@@ -1,0 +1,23 @@
+@use "../../../../css/variables" as var;
+
+.search-outpost {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .search-item {
+    text-align: center;
+    width: 300px;
+    background-color: #181818;
+    margin: 1rem;
+    padding: 1rem;
+    img {
+      width: 100%;
+      display: block;
+    }
+    header {
+      color: var.$text-light;
+      font-weight: bold;
+    }
+  }
+}

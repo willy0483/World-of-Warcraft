@@ -1,1 +1,74 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+.item-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-container .search-container {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #4d648d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.item-container .search-container img {
+  width: 34px;
+  height: 34px;
+}
+.item-container .search-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #ffffff;
+}
+.item-container .search-container ::-moz-placeholder {
+  color: #e0e0e0;
+}
+.item-container .search-container ::placeholder {
+  color: #e0e0e0;
+}
+.item-container .searchHeaderContainer {
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-outpost {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.search-outpost .search-item {
+  text-align: center;
+  width: 300px;
+  background-color: #181818;
+  margin: 1rem;
+  padding: 1rem;
+}
+.search-outpost .search-item img {
+  width: 100%;
+  display: block;
+}
+.search-outpost .search-item header {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f1c2e;
+  font-family: "Open Sans", sans-serif;
+}/*# sourceMappingURL=main.css.map */

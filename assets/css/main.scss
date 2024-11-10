@@ -1,0 +1,16 @@
+@use "../css/variables" as var;
+@use "../js/modules/view/buildSearch/buildSearch" as buildSearch;
+@use "../js/modules/view/seachOutputView/searchOutputView" as searchOutputView;
+
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var.$background-dark;
+  font-family: "Open Sans", sans-serif;
+}
