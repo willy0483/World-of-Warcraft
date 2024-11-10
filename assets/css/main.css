@@ -40,24 +40,32 @@
   font-weight: bold;
 }
 
-.search-outpost {
-  margin-top: 2rem;
+.amount-container {
+  max-width: 965px;
+  margin: 2rem auto 0 auto;
+  color: #ffffff;
+}
+
+.search-items-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.search-outpost .search-item {
+.search-items-container .search-item {
   text-align: center;
   width: 300px;
   background-color: #181818;
   margin: 1rem;
   padding: 1rem;
+  border-radius: 8px;
 }
-.search-outpost .search-item img {
+.search-items-container .search-item img {
   width: 100%;
   display: block;
 }
-.search-outpost .search-item header {
+.search-items-container .search-item header {
   color: #ffffff;
   font-weight: bold;
 }

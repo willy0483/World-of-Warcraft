@@ -3,9 +3,19 @@ import { getImage } from "../../data/fetchWowItem/fetchWowItem.js";
 
 export async function buildSearchOutput(searchResult) {
   console.log(searchResult);
-
   // Clear previous search results
   searchOutpostContainer.innerHTML = "";
+
+  const amountContainer = document.createElement("div");
+  amountContainer.classList.add("amount-container");
+  const amount = document.createElement("p");
+  amount.textContent = `Amount of results: ${searchResult.length}`;
+  amountContainer.appendChild(amount);
+  searchOutpostContainer.appendChild(amountContainer);
+
+  const searchItemsContainer = document.createElement("div");
+  searchItemsContainer.classList.add("search-items-container");
+  searchOutpostContainer.appendChild(searchItemsContainer);
 
   for (const element of searchResult) {
     const imageUrl = await getImage(element.data.creature_displays[0].id);
@@ -24,6 +34,6 @@ export async function buildSearchOutput(searchResult) {
     searchItem.appendChild(image);
     header.appendChild(name);
     searchItem.appendChild(header);
-    searchOutpostContainer.appendChild(searchItem);
+    searchItemsContainer.appendChild(searchItem);
   }
 }
