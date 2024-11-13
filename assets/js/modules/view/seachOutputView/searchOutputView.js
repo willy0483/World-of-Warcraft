@@ -2,7 +2,7 @@ import { searchOutpostContainer } from "../../../main.js";
 import { getImage } from "../../data/fetchWowItem/fetchWowItem.js";
 
 export async function buildSearchOutput(searchResult) {
-  console.log(searchResult);
+  // console.log(searchResult);
   // Clear previous search results
   searchOutpostContainer.innerHTML = "";
 
@@ -19,7 +19,7 @@ export async function buildSearchOutput(searchResult) {
 
   for (const element of searchResult) {
     const imageUrl = await getImage(element.data.creature_displays[0].id);
-    console.log(imageUrl);
+    // console.log(imageUrl);
 
     const searchItem = document.createElement("div");
     searchItem.classList.add("search-item");
@@ -35,5 +35,9 @@ export async function buildSearchOutput(searchResult) {
     header.appendChild(name);
     searchItem.appendChild(header);
     searchItemsContainer.appendChild(searchItem);
+
+    searchItem.addEventListener("click", () => {
+      console.log(element.data);
+    });
   }
 }

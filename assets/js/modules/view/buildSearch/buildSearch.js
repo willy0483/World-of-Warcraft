@@ -1,5 +1,6 @@
 import { itemContainer } from "../../../main.js";
 import { searchCreatures } from "../../data/fetchWowItem/fetchWowItem.js";
+import { homePage } from "../../../main.js";
 export function buildSearch() {
   const container = document.createElement("div");
   container.classList.add("searchHeaderContainer");
@@ -10,6 +11,10 @@ export function buildSearch() {
   title.textContent = "LootExplorer";
   header.appendChild(title);
   container.appendChild(header);
+
+  title.addEventListener("click", () => {
+    homePage();
+  });
 
   const searchContainer = document.createElement("section");
   searchContainer.classList.add("search-container");
@@ -26,6 +31,9 @@ export function buildSearch() {
   const img = document.createElement("img");
   img.src = "assets/images/Svg/search-alt-1-svgrepo-com.svg";
   img.alt = "Search icon";
+  img.addEventListener("click", (e) => {
+    searchCreatures(searchInput.value);
+  });
   searchContainer.appendChild(img);
   searchContainer.appendChild(searchInput);
   container.appendChild(searchContainer);

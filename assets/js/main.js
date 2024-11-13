@@ -1,13 +1,23 @@
 export const myApp = document.getElementById("app");
+const mainContainer = document.createElement("div");
+mainContainer.classList.add("main-container");
 
 export const itemContainer = document.createElement("div");
-itemContainer.classList.add("item-container");
-myApp.appendChild(itemContainer);
+
 import { buildSearch } from "./modules/view/buildSearch/buildSearch.js";
 
-// build search component
-buildSearch();
-
 export const searchOutpostContainer = document.createElement("section");
-searchOutpostContainer.classList.add("search-outpost");
-myApp.appendChild(searchOutpostContainer);
+
+export function homePage() {
+  mainContainer.innerHTML = "";
+  itemContainer.innerHTML = "";
+  searchOutpostContainer.innerHTML = "";
+  myApp.appendChild(mainContainer);
+  itemContainer.classList.add("item-container");
+  mainContainer.appendChild(itemContainer);
+  buildSearch();
+  searchOutpostContainer.classList.add("search-outpost");
+  mainContainer.appendChild(searchOutpostContainer);
+}
+
+homePage();

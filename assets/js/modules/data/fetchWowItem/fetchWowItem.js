@@ -17,15 +17,11 @@ export async function fetchData(id) {
       throw new Error("Network response was not ok " + response.statusText);
     }
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
   } catch (error) {
     console.error("There has been a problem with your fetch operation:", error);
   }
 }
-
-// Call the fetchData function
-// fetchData(51632);
-// 42722
 
 import { buildSearchOutput } from "../../view/seachOutputView/searchOutputView.js";
 export async function searchCreatures(name) {
@@ -65,7 +61,7 @@ export async function getImage(creatureDisplayId) {
       throw new Error("Network response was not ok " + response.statusText);
     }
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     return data.assets[0].value;
   } catch (error) {
     console.error("There has been a problem with your fetch operation:", error);

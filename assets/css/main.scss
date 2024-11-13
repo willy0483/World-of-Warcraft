@@ -14,3 +14,18 @@ body {
   background-color: var.$background-dark;
   font-family: "Open Sans", sans-serif;
 }
+
+body::-webkit-scrollbar {
+  width: 0em;
+}
+
+
+
+.main-container{
+  background-color: var.$background-medium;
+  width: 1200px;
+  padding: 1rem 0;
+  margin: 4rem  auto;
+  border-radius: 20px;
+  box-shadow:  #14253c40 0px 14px 28px,  #14253c38 0px 10px 10px;
+}

@@ -1,4 +1,4 @@
-import { clientId, clientSecret } from "../../../apiAuthorization.js";
+import { clientId, clientSecret } from "../../../../../apiAuthorization.js";
 
 // Function to get an access token
 export async function getAccessToken() {

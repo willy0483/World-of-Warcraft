@@ -17,15 +17,24 @@
     width: 300px;
     background-color: #181818;
     margin: 1rem;
-    padding: 1rem;
-    border-radius: 8px;
+    border-radius: 16px;
+    border: 5px solid var.$background-light;
     img {
+      border-radius: 16px;
       width: 100%;
       display: block;
     }
     header {
       color: var.$text-light;
       font-weight: bold;
+      background-color: var.$background-light;
+      padding: 0.8rem 0.5rem;
+      border-radius: 0px 0px 10px 10px;
+      
+    }h2 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
 }
